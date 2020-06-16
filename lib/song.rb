@@ -14,6 +14,12 @@ class Song
     @@all << self
   end
   
+  def self.create(name)
+    @name = name 
+    save
+    self
+  end
+  
   
   def self.all
     @@all 
